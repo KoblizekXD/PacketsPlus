@@ -5,14 +5,14 @@ import net.fabricmc.fabric.api.event.EventFactory;
 import net.minecraft.network.packet.Packet;
 import net.minecraft.util.ActionResult;
 
-public interface PacketIncomeEventCallback {
-    Event<PacketIncomeEventCallback> EVENT_PRE = createBackend();
-    Event<PacketIncomeEventCallback> EVENT_POST = createBackend();
-    static Event<PacketIncomeEventCallback> createBackend() {
+public interface PacketInEventCallback {
+    Event<PacketInEventCallback> EVENT_PRE = createBackend();
+    Event<PacketInEventCallback> EVENT_POST = createBackend();
+    static Event<PacketInEventCallback> createBackend() {
         return EventFactory.createArrayBacked(
-                PacketIncomeEventCallback.class,
+                PacketInEventCallback.class,
                 callbacks -> packet -> {
-                    for (PacketIncomeEventCallback callback : callbacks) {
+                    for (PacketInEventCallback callback : callbacks) {
                         ActionResult result = callback.interact(packet);
                         if (result != ActionResult.PASS)
                             return result;
