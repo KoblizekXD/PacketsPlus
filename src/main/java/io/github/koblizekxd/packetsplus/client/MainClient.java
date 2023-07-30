@@ -1,8 +1,7 @@
 package io.github.koblizekxd.packetsplus.client;
 
+import io.github.koblizekxd.packetsplus.Main;
 import net.fabricmc.api.ClientModInitializer;
-import net.minecraft.util.profiling.jfr.event.PacketEvent;
-import net.minecraft.util.profiling.jfr.event.PacketReceivedEvent;
 
 public class MainClient implements ClientModInitializer {
     /**
@@ -10,6 +9,8 @@ public class MainClient implements ClientModInitializer {
      */
     @Override
     public void onInitializeClient() {
-        
+        Main.LOGGER.info("");
+        Main.LOGGER.info("Using Packets+ networking library(v1.0-client)");
+        Main.LOGGER.info("");
     }
 }

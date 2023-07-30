@@ -17,6 +17,9 @@
     ],
     "main": [
       "io.github.koblizekxd.packetsplus.Main"
+    ],
+    "server": [
+      "io.github.koblizekxd.packetsplus.server.MainServer"
     ]
   },
   "mixins": [
