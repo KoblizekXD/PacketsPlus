@@ -3,10 +3,10 @@
   "id": "packetsplus",
   "version": "${version}",
   "name": "Packets+",
-  "description": "",
+  "description": "Simple to use Minecraft networking mod dependency",
   "authors": [],
   "contact": {
-    "repo": "https://github.com/janpr/PacketsPlus"
+    "repo": "https://github.com/KoblizekXD/PacketsPlus"
   },
   "license": "All-Rights-Reserved",
   "icon": "assets/packetsplus/icon.png",
