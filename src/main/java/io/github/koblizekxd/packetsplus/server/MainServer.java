@@ -10,7 +10,7 @@ public class MainServer implements DedicatedServerModInitializer {
     @Override
     public void onInitializeServer() {
         Main.LOGGER.info("");
-        Main.LOGGER.info("Using Packets+ networking library(v1.0-server)");
+        Main.LOGGER.info("Using Packets+ networking library(v{}-server)", Main.VERSION.getFriendlyString());
         Main.LOGGER.warn("!Server version does not have any functionality!");
         Main.LOGGER.info("");
     }

@@ -10,7 +10,7 @@ public class MainClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         Main.LOGGER.info("");
-        Main.LOGGER.info("Using Packets+ networking library(v1.0-client)");
+        Main.LOGGER.info("Using Packets+ networking library(v{}-client)", Main.VERSION.getFriendlyString());
         Main.LOGGER.info("");
     }
 }
