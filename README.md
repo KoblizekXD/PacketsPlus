@@ -18,4 +18,4 @@ where we can discuss what would you want to work on.
 Then create PR etc.  
 
 ### Licensing  
-Licensed can be found [here](LICENSE)
+License can be found [here(currently MIT)](LICENSE)
